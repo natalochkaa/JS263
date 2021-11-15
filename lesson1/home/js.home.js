@@ -180,14 +180,15 @@ console.log(123 == "123")
 
 
 // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-let str = +"20";
-// string, поставила + уже number.
+let str = "20";
+console.log(str)
+// string
 let a = 5;
-// number
 console.log(str, a)
 document.write(str + a + "<br/>");
-// бо 20+5=25 і так дальше......
+// бо 200+5=205 строчка
 document.write(str - a + "<br/>");
+
 document.write(str * "2" + "<br/>");
 document.write(str / 2 + "<br/>");
 
