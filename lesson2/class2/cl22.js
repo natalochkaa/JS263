@@ -83,3 +83,25 @@
 // else{
 //     document.write("<h1>шось ти взагалі не туди</h1>")
 // }
+
+let xxx = +prompt("напиши від 1 до 5 і ВИГРАЙ ПРИЗ")
+switch (xxx){
+    case 1:
+        document.write("<h1>УРА! ВИ ВИГРАЛИ ПОДОРОЖ ДО ІСЛАНДІЇ</h1>")
+    break
+    case 2:
+        document.write("<h1>Зірочку з неба :D</h1>")
+    break
+    case 3:
+        document.write("<h1>повернутись у дитинство</h1>")
+    break
+    case 4:
+        document.write("<h1>Mercedes-Benz GLE</h1>")
+    break
+    case 5:
+        document.write("<h1>1000000000000000000 £££</h1>")
+    break
+    default:
+        document.write("<h1>шось ти взагалі не туди</h1>")
+
+}
