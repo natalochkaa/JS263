@@ -101,19 +101,21 @@
 // function randomizer1(size, limit) {
 //     let random1 =[]
 //     for (let i = 0; i < size; i++) {
-//         random1 = Math.round(Math.random() * limit)
+//         random1[i]= Math.round(Math.random() * limit)
 //     }
 //         return random1
 // }
-// console.log(randomizer1(10, 90))
+// console.log(randomizer1(10, 100))
 
-// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1]. (шось не то тут)
+// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let xxx =[5,9,11]
 // function neww (xxx){
+//     let newarr = []
 //     for (let i = xxx.length - 1,r=0; i >= 0; i--, r++) {
-//        let item =xxx[i]
-//         xxx[r]= item
+//        newarr[i] = xxx[r]
 //     }
+//     return newarr
 // }
-// neww (xxx)
-// console.log(xxx)
+// console.log(neww(xxx))
+
+
