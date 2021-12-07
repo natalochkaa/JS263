@@ -142,7 +142,7 @@ let maddleName = "Василівна"
 let lastName = "Костенко"
 let person = `${firstName} ${maddleName} ${lastName} `
 console.log( person )
- prompt(`Вітаю, Ліно Василівно. Вам 91 рік.`)
+prompt(`Вітаю, Ліно Василівно. Вам 91 рік.`)
 
 // я не зовсім зрозуміла це завдання.
 
@@ -191,10 +191,3 @@ document.write(str - a + "<br/>");
 
 document.write(str * "2" + "<br/>");
 document.write(str / 2 + "<br/>");
-
-
-
-
-
-
-

@@ -53,44 +53,44 @@
 // }
 // console.log(minnumber(xxx))
 
-// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13 **********
+let number=(arguments)=>{
+    let res = 0
+    for(let item of arguments){
+        res=res+item
+    }
+    return res
+}
+let res=number([10,90,50,20])
+console.log(res)
 
-// let number=(a,b,c,d)=>{
-//     let res = 0
-//     for(let item of arguments){
-//         res=res+item
-//     }
-//     return res
-// }
-// let res=number(10,90,50,20)
-// console.log(res)
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-// let middle = [10,10,40];
-// let middle1 = (middle)=>{
+// let middle = [10, 10, 40];
+// let middle1 = (middle) => {
 //     let res = 0;
 //     for (const item of middle) {
 //         res = item + res;
 //     }
-//     return res/middle.length;
+//     return res / middle.length;
 // }
 // console.log(middle1(middle))
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменше, а виводить найбільше (Math використовувати заборонено);
-// let minmaxf=(arg)=> {
-//     let min = arg [0]
-//     let max = arg [0]
-//     for (let item of arg) {
-//         if (item > max) {
-//             max = item
-//         }
-//         if (item < min) {
-//             min = item
-//         }
-//     }
-//     console.log("max", max)
-//     return min
-// }
-// console.log(minmaxf(10,70,900,80))
+let minmaxf=(...arg)=> {
+    let min = arg [0]
+    let max = arg [0]
+    for (let item of arg) {
+        if (item > max) {
+            max = item
+        }
+        if (item < min) {
+            min = item
+        }
+    }
+    console.log("max", max)
+    return min
+}
+console.log(minmaxf(10,70,900,80))
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
@@ -102,21 +102,21 @@
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону. (чось воно не працює:()
 
-// let randomizer1=(size, limit)=> {
-//     let random1 =[]
+// let randomizer1 = (size, limit) => {
+//     let random1 = []
 //     for (let i = 0; i < size; i++) {
-//         random1[i]= Math.round(Math.random() * limit)
+//         random1[i] = Math.round(Math.random() * limit)
 //     }
-//         return random1
+//     return random1
 // }
 // console.log(randomizer1(10, 100))
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-// let xxx =[5,9,11]
-// let neww =(xxx)=>{
+// let xxx = [5, 9, 11]
+// let neww = (xxx) => {
 //     let newarr = []
-//     for (let i = xxx.length - 1,r=0; i >= 0; i--, r++) {
-//        newarr[i] = xxx[r]
+//     for (let i = xxx.length - 1, r = 0; i >= 0; i--, r++) {
+//         newarr[i] = xxx[r]
 //     }
 //     return newarr
 // }
