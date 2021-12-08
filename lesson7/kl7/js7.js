@@ -6,38 +6,38 @@
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //----------------------------------------------------------------------------------------------------------------------
 function Car(model, manufacturer, year, maxSpeed, engineCapacity) {
-    this.model = model
-    this.manufacturer = manufacturer
-    this.year = year
-    this.maxSpeed = maxSpeed
-    this.engineCapacity = engineCapacity
+    this.model = model;
+    this.manufacturer = manufacturer;
+    this.year = year;
+    this.maxSpeed = maxSpeed;
+    this.engineCapacity = engineCapacity;
 
     this.drive = function () {
-        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
     }
 
     this.info = function () {
-        console.log(`model - ${this.model},manufacturer - ${this.manufacturer},year - ${this.year}, maxSpeed - ${this.maxSpeed},engineCapacity-${this.engineCapacity}`)
+        console.log(`model - ${this.model},manufacturer - ${this.manufacturer},year - ${this.year}, maxSpeed - ${this.maxSpeed},engineCapacity-${this.engineCapacity}`);
     }
     this.increaseMaxSpeed = function (newSpeed) {
-        this.maxSpeed += newSpeed
+        this.maxSpeed += newSpeed;
     }
     this.changeYear = function (newValue) {
-        this.year = newValue
+        this.year = newValue;
     }
     this.addDriver = function (driver) {
-        this.driver = driver
+        this.driver = driver;
     }
 }
 
-let mersedes = new Car(`GLA-Class 0252680038`, 'Mercedes-Benz', 2018, `205 км / год`, `1950 куб. см`)
-console.log(mersedes)
-mersedes.drive()
-mersedes.info()
-mersedes.increaseMaxSpeed(20)
-mersedes.changeYear(2021)
-mersedes.addDriver()
-console.log(mersedes)
+let mersedes = new Car(`GLA-Class 0252680038`, 'Mercedes-Benz', 2018, `205 км / год`, `1950 куб. см`);
+console.log(mersedes);
+mersedes.drive();
+mersedes.info();
+mersedes.increaseMaxSpeed(20);
+mersedes.changeYear(2021);
+mersedes.addDriver();
+console.log(mersedes);
 //======================================================================================================================
 // - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -47,15 +47,44 @@ console.log(mersedes)
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //----------------------------------------------------------------------------------------------------------------------
-class SuperCar extends Car {
+class SuperCar {
     constructor(model, manufacturer, year, maxSpeed, engineCapacity) {
-        super(model, manufacturer, year, maxSpeed, engineCapacity);
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        this.engineCapacity = engineCapacity;
+    }
+
+    drive() {
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+    }
+
+    info() {
+        console.log(`model - ${this.model},manufacturer - ${this.manufacturer},year - ${this.year}, maxSpeed - ${this.maxSpeed},engineCapacity-${this.engineCapacity}`);
+    }
+
+    increaseMaxSpeed(newSpeed) {
+        this.maxSpeed += newSpeed;
+    }
+
+    changeYear(newValue) {
+        this.year = newValue;
+    }
+
+    addDriver(driver) {
+        this.driver = driver;
     }
 }
 
-let like = new SuperCar(`S-Class`, `Mercedes-Benz `, 2018, `210 км / год`, `1960 куб. см`)
-
-console.log(like)
+let like = new SuperCar(`S-Class`, `Mercedes-Benz `, 2018, `210 км / год`, `1960 куб. см`);
+console.log(like);
+like.drive();
+like.info();
+like.increaseMaxSpeed(20);
+like.changeYear(2021);
+like.addDriver();
+console.log(like);
 //======================================================================================================================
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
@@ -64,9 +93,9 @@ console.log(like)
 //----------------------------------------------------------------------------------------------------------------------
 class Cinderella {
     constructor(Name, age, size) {
-        this.Name = Name
-        this.age = age
-        this.size = size
+        this.Name = Name;
+        this.age = age;
+        this.size = size;
     }
 }
 
@@ -82,17 +111,17 @@ let cinderellas = [
     new Cinderella(`Matilda`, 29, `38`),
     new Cinderella(`Meghan Markle`, 40, `40`)
 ]
-console.log(cinderellas)
+console.log(cinderellas);
 
 class Prince extends Cinderella {
     constructor(Name, age, choose) {
         super(Name, age);
-        this.choose = choose
+        this.choose = choose;
     }
 }
 
-let prince = new Prince(`Henry Charles`, 37, `40`)
-console.log(prince)
+let prince = new Prince(`Henry Charles`, 37, `40`);
+console.log(prince);
 
 let family = (cinderellas, prince) => {
     for (let item of cinderellas) {
@@ -101,7 +130,7 @@ let family = (cinderellas, prince) => {
         }
     }
 }
-console.log(family(cinderellas, prince))
+console.log(family(cinderellas, prince));
 
-let resalt = cinderellas.find(value => value.size === prince.choose)
-console.log(resalt)
+let resalt = cinderellas.find(value => value.size === prince.choose);
+console.log(resalt);

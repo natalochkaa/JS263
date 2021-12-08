@@ -2,11 +2,11 @@
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 //----------------------------------------------------------------------------------------------------------------------
 function User(id, name, surname, email, phone) {
-    this.id = id
-    this.name = name
-    this.surname = surname
-    this.email = email
-    this.phone = phone
+    this.id = id;
+    this.name = name;
+    this.surname = surname;
+    this.email = email;
+    this.phone = phone;
 }
 
 let manyUsers = [
@@ -21,27 +21,27 @@ let manyUsers = [
     new User(9, `Stevennnnnnnnn`, `Jobsssssss`, `stevergtr@apple.com`, +1234562347890),
     new User(10, `Stevennnnnnnnn`, `Jobsssssss`, `stevwegre@apple.com`, +1234523467890)
 ]
-console.log(manyUsers)
+console.log(manyUsers);
 //======================================================================================================================
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter) тут чось не получилось
 //----------------------------------------------------------------------------------------------------------------------
-let evenNumbers = manyUsers.filter(value => value.id % 2 === 0)
-console.log(evenNumbers)
+let evenNumbers = manyUsers.filter(value => value.id % 2 === 0);
+console.log(evenNumbers);
 //======================================================================================================================
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 //----------------------------------------------------------------------------------------------------------------------
-let sortUser = manyUsers.sort((a, b) => b.id - a.id)
-console.log(sortUser)
+let sortUser = manyUsers.sort((a, b) => b.id - a.id);
+console.log(sortUser);
 //======================================================================================================================
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 //----------------------------------------------------------------------------------------------------------------------
 class Client {
     constructor(id, name, surname, email, phone, order) {
-        this.id = id
-        this.name = name
-        this.email = email
-        this.phone = phone
-        this.order = order
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
     }
 }
 //======================================================================================================================
@@ -56,5 +56,5 @@ let Chocolate = [
 //======================================================================================================================
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 //----------------------------------------------------------------------------------------------------------------------
-let sortOrder = Chocolate.sort((a, b) => b.order.length - a.order.length)
-console.log(sortOrder)
+let sortOrder = Chocolate.sort((a, b) => b.order.length - a.order.length);
+console.log(sortOrder);
