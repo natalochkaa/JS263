@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .basis {
+            width: 276px;
+            height: 1000px;
+            background: lightgray;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .versace {
+            width: 270px;
+            height: 50px;
+            background: mediumseagreen;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        button{
+            width: 400px;
+            height: 50px;
+            background: lightgray;
+            border-radius: 5px;
+        }
+        .menu{
+            width: 100px;
+            background: cornflowerblue;
+            transition: 2s;
+            border-radius: 10px;
+            border: 2px solid navy;
+        }
+        .hide{
+            transition: 1s;
+            overflow: hidden;
+            height: 0;
+        }
+        .arrDiv{
+            width: 400px;
+            background: gold;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .siteButton{
+            width: 250px;
+            height: 50px;
+            background: greenyellow;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li> Shop</li>
+    <li>Trending</li>
+    <li>Christmas</li>
+</ul>
+<form name="forma">
+<input type="text" id = "age">
+<button> Сheck your age</button>
+</form>
+<div id="image"></div>
+<input type="button" onclick="this.style.display='none'" value="давай грати в хованки, нажми на мене :D"/>
+    <div id="text">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeKXs-bri1BDxIDQ1rdF75VVlCji7qAFhURS2ede2o5BcQXcj-wED_jhU5A_NnamyunQ&usqp=CAU"
+             alt="">
+    </div>
+
+<script src="PageScripts10.js"></script>
+</body>
+</html>
