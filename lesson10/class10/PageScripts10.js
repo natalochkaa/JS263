@@ -2,24 +2,24 @@
 //     Кнопка повинна лежати за межами форм (Щоб уникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 // document.getElementById(`formButton`).onclick = function () {
-//     let f1 = document.forms.YourForm1.YourInput1.value
-//     let f2 = document.forms.YourForm1.YourInput2.value
-//     let f3 = document.forms.YourForm2.YourInput3.value
-//     let f4 = document.forms.YourForm2.YourInput4.value
-//     console.log(f1, f2, f3, f4)
+//     let f1 = document.forms.YourForm1.YourInput1.value;
+//     let f2 = document.forms.YourForm1.YourInput2.value;
+//     let f3 = document.forms.YourForm2.YourInput3.value;
+//     let f4 = document.forms.YourForm2.YourInput4.value;
+//     console.log(f1, f2, f3, f4);
 // }
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання) (визнаю,що я це списала,бо дуже нервувалась)
-// let YourInput5 = document.createElement(`input`)
-// let YourInput6 = document.createElement(`input`)
-// let YourInput7 = document.createElement(`input`)
-// let formButton1 = document.createElement(`button`)
-// YourInput5.classList.add(`characteristic2Task`)
-// YourInput6.classList.add(`characteristic2Task`)
-// YourInput7.classList.add(`characteristic2Task`)
-// formButton1.classList.add(`buttonStyle`)
-// formButton1.innerHTML = `Table`
+// let YourInput5 = document.createElement(`input`);
+// let YourInput6 = document.createElement(`input`);
+// let YourInput7 = document.createElement(`input`);
+// let formButton1 = document.createElement(`button`);
+// YourInput5.classList.add(`characteristic2Task`);
+// YourInput6.classList.add(`characteristic2Task`);
+// YourInput7.classList.add(`characteristic2Task`);
+// formButton1.classList.add(`buttonStyle`);
+// formButton1.innerHTML = `Table`;
 //
 // document.body.append(YourInput5, YourInput6, YourInput7, formButton1);
 //
@@ -59,19 +59,19 @@
 //     Якщо людина вводить слово і воно міститься в масиві не цензурних слів
 // кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
-// let arrFuck = [`Блядь`, `Блядство`, `Бля`, `Доёбывать(ся)`, `ахуеть`, `Въебать`, `Ебальник`, `Ебать`, `Ёб твою мать`, `Заебать`, `Заебаться`, `Заебись`, `Лярва`, `Наебать`, `Нахуя`, `Нехуй`, `Охуенно`, `Пиздец`, `Поебать`, `Похуй`, `Проебать`, `Расхуярить`, `Сука`, `Уебать`, `Хуёво`, `Хуй`, `Шароёбиться`]
-// let inp = document.createElement(`input`)
-// let btn = document.createElement(`button`)
-// btn.innerHTML = `Ну шо?`
-// document.body.append(inp, btn)
+// let arrFuck = [`Блядь`, `Блядство`, `Бля`, `Доёбывать(ся)`, `ахуеть`, `Въебать`, `Ебальник`, `Ебать`, `Ёб твою мать`, `Заебать`, `Заебаться`, `Заебись`, `Лярва`, `Наебать`, `Нахуя`, `Нехуй`, `Охуенно`, `Пиздец`, `Поебать`, `Похуй`, `Проебать`, `Расхуярить`, `Сука`, `Уебать`, `Хуёво`, `Хуй`, `Шароёбиться`];
+// let inp = document.createElement(`input`);
+// let btn = document.createElement(`button`);
+// btn.innerHTML = `Ну шо?`;
+// document.body.append(inp, btn);
 // btn.onclick =  function () {
-//     let words = inp.value
+//     let words = inp.value;
 //     for (let item of arrFuck) {
 //         if (item  === words) {
-//             alert(`хуй чоло`)
+//             alert(`хуй чоло`);
 //         }
 //         else {
-//             alert( `you молодець`)
+//             alert( `you молодець`);
 //         }
 //     }
 // }
@@ -82,19 +82,19 @@
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
 
-let arrFuck = [`Блядь`, `Блядство`, `Бля`, `Доёбывать(ся)`, `ахуеть`, `Въебать`, `Ебальник`, `Ебать`, `Ёб твою мать`, `Заебать`, `Заебаться`, `Заебись`, `Лярва`, `Наебать`, `Нахуя`, `Нехуй`, `Охуенно`, `Пиздец`, `Поебать`, `Похуй`, `Проебать`, `Расхуярить`, `Сука`, `Уебать`, `Хуёво`, `Хуй`, `Шароёбиться`]
-let inp = document.createElement(`input`)
-let btn = document.createElement(`button`)
-btn.innerHTML = `Ну шо?`
-document.body.append(inp, btn)
+let arrFuck = [`Блядь`, `Блядство`, `Бля`, `Доёбывать(ся)`, `ахуеть`, `Въебать`, `Ебальник`, `Ебать`, `Ёб твою мать`, `Заебать`, `Заебаться`, `Заебись`, `Лярва`, `Наебать`, `Нахуя`, `Нехуй`, `Охуенно`, `Пиздец`, `Поебать`, `Похуй`, `Проебать`, `Расхуярить`, `Сука`, `Уебать`, `Хуёво`, `Хуй`, `Шароёбиться`];
+let inp = document.createElement(`input`);
+let btn = document.createElement(`button`);
+btn.innerHTML = `Ну шо?`;
+document.body.append(inp, btn);
 btn.onclick =  function () {
-    let words = inp.value
+    let words = inp.value;
     for (let item of arrFuck) {
         if (words.includes(arrFuck)) {
-            alert(`все одно молодець`)
+            alert(`все одно молодець`);
         }
         else {
-            alert( `you молодець`)
+            alert( `you молодець`);
         }
     }
 }
