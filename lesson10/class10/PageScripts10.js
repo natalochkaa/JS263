@@ -90,7 +90,7 @@ document.body.append(inp, btn);
 btn.onclick =  function () {
     let words = inp.value;
     for (let item of arrFuck) {
-        if (words.includes(arrFuck)) {
+        if (words.includes(item)) {
             alert(`все одно молодець`);
         }
         else {
