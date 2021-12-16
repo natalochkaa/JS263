@@ -98,3 +98,23 @@ btn.onclick =  function () {
         }
     }
 }
+// або
+btn.onclick = function (){
+    let newArr = []
+    let words = inp.value;
+    for (let item of arrFuck){
+        if(words.includes(item)){
+            newArr.push(true)
+        }
+        else {
+            newArr.push(false)
+        }
+    }
+    if (newArr.includes(true)){
+        alert(`1483 да 369 Альбукерке жжот, чё-каво сучара, жди сигнала!`)
+    }
+    else {
+        alert(`you you`)
+    }
+
+}
