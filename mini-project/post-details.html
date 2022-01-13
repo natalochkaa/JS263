@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.post.details.css">
+</head>
+<body>
+<div class="button">Detailed information about the current post</div>;
+<div class="post"></div>;
+<script>
+    let urlPost = new URL(window.location.href);
+    let userId = urlPost.searchParams.get("id");
+    let userDetailsPost = JSON.parse(window.localStorage.getItem(`user${userId}`));
+    let userDiv2 = document.getElementsByClassName(`post`)[0];
+
+    let h2Post = document.createElement(`h2`);
+    h2Post.classList.add(`h2Post`);
+    h2Post.innerText = `userId - ${userDetailsPost.userId}
+    id - ${userDetailsPost.id}
+    title - "${userDetailsPost.title}"
+    body - "${userDetailsPost.body}"`
+    let btnPost = document.createElement(`button`);
+    btnPost.classList.add(`btnPost`);
+    btnPost.innerHTML = `comments`;
+    btnPost.onclick = function (){
+        fetch('https://jsonplaceholder.typicode.com/posts/' + userId + '/comments')
+        .then(answer => answer.json())
+        .then(json =>{
+            let divComents = document.createElement(`div`);
+            divComents.classList.add(`styleDivComments`);
+            for (let item of json){
+                let comments = document.createElement(`div`);
+                comments.classList.add(`styleComments`);
+                comments.innerHTML = `COMMENTS - "${item.body}"`;
+                divComents.appendChild(comments);
+            }
+            h2Post.append(divComents);
+        })
+    }
+    h2Post.append(btnPost);
+    userDiv2.append(h2Post);
+</script>
+</body>
+</html>

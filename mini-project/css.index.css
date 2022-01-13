@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    font-family: 'Poppins', sans-serif;
+}
+
+.style_divForEachUser {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+}
+
+.style_divForEachUser::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.style_divForEachUser::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.style_divForEachUser::before,
+.style_divForEachUser::after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.style_divForEachUser {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.user {
+    width: 1000px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.style_divForEachUser {
+    width: 440px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.styleBtn {
+    min-width: 170px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: .1px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px #008080;
+    background-color: transparent;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.styleBtn:hover {
+    transform: scale(1.1);
+    background-color: #f7f7f7;
+    color: darkblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px darkblue;
+    letter-spacing: 1.1px;
+    border-radius: 10px;
+}
